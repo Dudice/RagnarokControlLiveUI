@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ragnarok Viewer Commands</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      background: #111;
+      color: white;
+      padding: 20px;
+    }
+    button {
+      font-size: 20px;
+      padding: 15px 30px;
+      margin: 10px;
+      border: none;
+      border-radius: 12px;
+      background: #444;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #666;
+    }
+    .notice {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚔️ Help Control the Hero</h1>
+  <p>Tap a command button, then paste it in the YouTube chat!</p>
+
+  <button onclick="copyCommand('!join')">Join Wave ⚔️</button>
+  <button onclick="copyCommand('!buff')">Buff 🛡️</button>
+  <button onclick="copyCommand('!potion')">Heal 💉</button>
+  <button onclick="copyCommand('!curse')">Curse Top ☠️</button>
+
+  <p id="notice" class="notice"></p>
+
+  <script>
+    async function copyCommand(command) {
+      try {
+        await navigator.clipboard.writeText(command);
+        document.getElementById("notice").textContent = `📋 Copied "${command}" to clipboard! Paste it in YouTube chat.`;
+      } catch (err) {
+        document.getElementById("notice").textContent = "❌ Copy failed. Try copying manually.";
+      }
+    }
+  </script>
+</body>
+</html>

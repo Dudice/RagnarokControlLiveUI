@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ragnarok Viewer Commands</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      background: #111;
+      color: white;
+      padding: 20px;
+    }
+    button {
+      font-size: 20px;
+      padding: 15px 30px;
+      margin: 10px;
+      border: none;
+      border-radius: 12px;
+      background: #444;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚔️ Help Control the Hero</h1>
+  <p>Tap a button to send your command!</p>
+
+  <button onclick="sendCommand('!join')">Join Wave ⚔️</button>
+  <button onclick="sendCommand('!buff')">Buff 🛡️</button>
+  <button onclick="sendCommand('!potion')">Heal 💉</button>
+  <button onclick="sendCommand('!curse')">Curse Top Summoner ☠️</button>
+
+  <p id="status" style="margin-top: 20px;"></p>
+
+  <script>
+    function sendCommand(command) {
+      document.getElementById("status").textContent = `Command sent: ${command}`;
+    }
+  </script>
+</body>
+</html>

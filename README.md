@@ -78,6 +78,26 @@
   <li><code>!help</code> – Show Help Menu</li>
 </ul>
 
+<h2>⚒️ Equipment Refinement & Gear</h2>
+
+<p><strong>!refineweapon</strong> – Refine your weapon:</p>
+<ul>
+  <li>Each refine adds +1 to weapon level.</li>
+  <li>Higher refine = more damage but lower success rate.</li>
+  <li>Costs CP per refine attempt.</li>
+</ul>
+
+<p><strong>!refinearmor</strong> – Refine your armor:</p>
+<ul>
+  <li>Each refine adds +1 to armor level.</li>
+  <li>Higher refine = more defense but lower success rate.</li>
+  <li>Costs CP per refine attempt.</li>
+</ul>
+
+<p><strong>!gear</strong> – View your equipment and refine status.</p>
+<ul>
+  <li>Opens the gear window showing your current equips and their refine levels.</li>
+</ul>
 <hr>
 
 <h2>🚫 Rules of War</h2>
